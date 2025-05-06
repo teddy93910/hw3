@@ -1,13 +1,112 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入會員 | RONIN 獵漁人釣具</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<!-- Header 導覽列 -->
+<header class="header">
+    <div class="logo">
+        <img src="登入會員 _ RONIN 獵漁人釣具_files/5642c3e2-ac43-469e-84bc-5add715eb285-1691548372-bo4iq5b1w1_d.png" alt="RONIN Logo">
+    </div>
+    <nav class="nav">
+        <a href="#">商品分類</a>
+        <a href="#">優惠活動</a>
+        <a href="#">獵漁人俱樂部</a>
+        <a href="#">漁人交流專區</a>
+        <a href="#">線上購物須知</a>
+        <a href="#">兌換購</a>
+    </nav>
+    <div class="header-icons">
+        <i class="fas fa-mobile"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+</header>
 
+<!-- Login 主體區塊 -->
+<main class="login-wrapper">
+    <div class="login-box">
+        <h2 class="title">會員登入</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="phone">手機號碼</label>
+                <input type="tel" id="phone" name="phone" placeholder="請輸入手機號碼">
+            </div>
+            <button type="submit" class="login-btn">登入 / 註冊</button>
+        </form>
+        <div class="or-line">
+            <span>或</span>
+        </div>
+        <button class="line-login">
+            <img src="line_icon.webp" alt="LINE" class="line-icon">
+            使用 LINE 登入
+        </button>
+        <p class="note">擁有帳號即表示你同意</p>
+        <p class="note"><a href="#">會員權益聲明</a> 與 <a href="#">隱私權及網站使用條款</a></p>
+    </div>
+</main>
+
+<!-- 社群浮動按鈕 -->
+<div class="social-float">
+    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="line"><i class="fab fa-line"></i></a>
+</div>
+
+<!-- 全版 Footer 資訊區 -->
+<section class="footer-info">
+    <div class="footer-container">
+        <div class="footer-col footer-left">
+            <img src="登入會員 _ RONIN 獵漁人釣具_files/481293651_939558335055337_3392737607803499869_n.jpg" alt="RONIN 粉絲專頁宣傳圖" class="fanpage-img">            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-line"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="footer-col footer-middle">
+            <div class="middle-columns">
+                <div class="column">
+                    <h4>關於我們</h4>
+                    <p>品牌故事</p>
+                    <p>商店簡介</p>
+                    <p>門市資訊</p>
+                    <p>隱私權及網站條款</p>
+                </div>
+                <div class="column">
+                    <h4>客服資訊</h4>
+                    <p>購物說明</p>
+                    <p>客服留言</p>
+                    <p>會員權益聲明</p>
+                    <p>聯絡我們</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-col footer-right">
+            <h4>官方 APP</h4>
+            <input type="tel" placeholder="請輸入台灣手機號碼">
+            <button>免費傳送下載連結至手機</button>
+            <div class="store-btns">
+                <img src="2025-05-07 024401.png" alt="App Store" height="40">
+                <img src="2025-05-07 024350.png" alt="Google Play" height="40">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>本站最佳瀏覽環境請使用 Google Chrome、Firefox 或 Edge 以上版本</p>
+        <p>© 2025 by 城市路亞事業有限公司</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("模擬登入成功！（實際功能需後端）");
+    });
+</script>
 </body>
 </html>
